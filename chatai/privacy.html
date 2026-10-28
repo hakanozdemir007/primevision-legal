@@ -37,7 +37,7 @@
   <li><strong>Ses kayıtları:</strong> Ses kaydınızı biz saklamayız.</li>
   <li><strong>Görüşme dökümü ve özet:</strong> Görüşmenin yazıya dökülmüş hali, başlığı, özeti ve karakterin sizinle ilgili hatırladığı notlar ("hafıza") hesabınızda saklanır; böylece cihazlarınız arasında eşitlenir. Hafıza açıksa, karakterin konuşmayı size göre açabilmesi için bu notların bir kısmı görüşme başında Google Gemini'ye gönderilir. Ayarlardan geçmişi ve hafızayı kapatabilir, hafızayı ve konuşmaları silebilirsiniz.</li>
   <li><strong>Soru Sor:</strong> Sesli ya da yazılı sorunuz cevap üretilmesi için Google Gemini'ye gönderilir. Soru ve cevabı saklamayız; yalnızca günlük hak için soru sayısını tutarız.</li>
-  <li><strong>Görevler (rol yapma):</strong> Başlattığınız görevin kimliği görüşme kaydında tutulur; görevi tamamladığınız bilgisi yalnızca cihazınızda saklanır.</li>
+  <li><strong>Görevler (rol yapma):</strong> Başlattığınız görevin kimliği ve görevin tamamlanıp tamamlanmadığı görüşme kaydında tutulur. Hangi görevleri kaç kez tamamladığınız hesabınızda saklanır; böylece cihazlarınız arasında eşitlenir ve yeniden kurulumda kaybolmaz.</li>
   <li><strong>Tercihler:</strong> Öğrendiğiniz dil, seviyeniz, ilgi alanlarınız ve uygulama ayarları.</li>
 </ul>
 
@@ -74,7 +74,7 @@
 <p>Bu sağlayıcıların bazıları verileri Türkiye ve AB dışında işleyebilir. Yasal zorunluluk dışında verilerinizi başka kimseyle paylaşmayız.</p>
 
 <h2>4. Saklama süresi</h2>
-<p>Verileriniz hesabınız açık olduğu sürece saklanır. Hesabınızı sildiğinizde hesabınız ve ona bağlı tüm veriler (konuşmalar, hafıza, kullanım ve abonelik kayıtları) kalıcı olarak silinir. Apple ile giriş yaptıysanız, uygulamanın Apple hesabınıza erişim izni de iptal edilir.</p>
+<p>Verileriniz hesabınız açık olduğu sürece saklanır. Hesabınızı sildiğinizde hesabınız ve ona bağlı tüm veriler (konuşmalar, hafıza, görev ilerlemesi, kullanım ve abonelik kayıtları) kalıcı olarak silinir. Apple ile giriş yaptıysanız, uygulamanın Apple hesabınıza erişim izni de iptal edilir.</p>
 <p>Kötüye kullanımı önlemek için hesap silindiğinde yalnızca şu bilgiler kalır:</p>
 <ul>
   <li><strong>E-posta parmak izi ve deneme başlangıcı:</strong> E-posta adresinizin kendisi değil, gizli bir anahtarla üretilen ve geri çevrilemeyen bir parmak izi (HMAC-SHA256) ile deneme sürenizin başladığı tarih ve denemede kullandığınız canlı ses süresi. Aynı e-postayla yeniden kaydolunduğunda deneme ve canlı ses hakkı baştan başlamaz. Deneme başlangıcından itibaren <strong>24 ay</strong> sonra silinir.</li>
@@ -115,7 +115,7 @@
   <li><strong>Audio recordings:</strong> we do not store audio recordings.</li>
   <li><strong>Transcripts and summaries:</strong> the written transcript, title, summary and the notes the character remembers about you ("memory") are stored in your account so they sync across your devices. When memory is on, some of these notes are sent to Google Gemini at the start of a call so the character can open the conversation in a personal way. You can turn history and memory off and delete memories and conversations in the app.</li>
   <li><strong>Ask:</strong> your spoken or typed question is sent to Google Gemini to produce an answer. We do not store questions or answers; we only count them for the daily limit.</li>
-  <li><strong>Missions (role-play):</strong> the ID of a mission you start is stored with the call record; whether you completed it is stored only on your device.</li>
+  <li><strong>Missions (role-play):</strong> the ID of a mission you start and whether it was completed are stored with the call record. Which missions you have completed, and how many times, is stored in your account so it syncs across your devices and survives a reinstall.</li>
   <li><strong>Preferences:</strong> the language you learn, your level, interests and app settings.</li>
 </ul>
 
@@ -152,7 +152,7 @@
 <p>Some of these providers may process data outside Türkiye and the EU. We do not share your data with anyone else unless required by law.</p>
 
 <h2>4. Retention</h2>
-<p>Your data is kept while your account exists. When you delete your account, the account and all data linked to it (conversations, memory, usage and subscription records) are permanently deleted. If you signed in with Apple, the app's access to your Apple account is also revoked.</p>
+<p>Your data is kept while your account exists. When you delete your account, the account and all data linked to it (conversations, memory, mission progress, usage and subscription records) are permanently deleted. If you signed in with Apple, the app's access to your Apple account is also revoked.</p>
 <p>To prevent abuse, only the following is kept after an account is deleted:</p>
 <ul>
   <li><strong>Email fingerprint and trial start:</strong> not your email address itself, but an irreversible fingerprint made with a secret key (HMAC-SHA256), together with the date your free trial started and the live voice time used during the trial. Signing up again with the same email does not restart the trial or its live voice time. Deleted <strong>24 months</strong> after the trial started.</li>
